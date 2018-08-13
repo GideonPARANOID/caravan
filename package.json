@@ -29,7 +29,7 @@
     "webpack-cli": "^3.1.0"
   },
   "config": {
-    "pre-commit": "npm run build"
+    "pre-commit": "npm run build && git add docs"
   },
   "dependencies": {
     "lodash": "^4.17.10"

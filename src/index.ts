@@ -1,12 +1,13 @@
 import * as _ from 'lodash';
 
-import { list } from './words';
+import { nouns, suffixes } from './words';
 
 
-function generateName(count: number) {
-  return _.chain(list)
-    .shuffle()
-    .slice(0, count)
+function generateName() {
+  return _.chain([
+    _.shuffle(nouns)[0],
+    _.shuffle(suffixes)[0]
+  ])
     .join(' ')
     .startCase()
     .value();
@@ -17,7 +18,7 @@ function init() {
     .getElementById('generate-name')
     .addEventListener('click', () => document
       .getElementById('name')
-      .innerHTML = generateName(2));
+      .innerHTML = generateName());
 }
 
 init();
