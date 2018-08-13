@@ -1,16 +1,21 @@
 const nouns = [
-  'pegasus',
   'adventurer',
-  'journeyman'
+  'explorer',
+  'journeyman',
+  'pegasus',
+  'quest'
 ];
 
 const suffixes = [
   '2000',
   'agile',
-  'premier',
-  'swift',
+  'deluxe',
   'elite',
-  'deluxe'
+  'executive',
+  'premier',
+  'premium',
+  'swift',
+  'ultra'
 ];
 
 
