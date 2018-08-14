@@ -3,7 +3,8 @@ const nouns = [
   'explorer',
   'journeyman',
   'pegasus',
-  'quest'
+  'quest',
+  'tourer'
 ];
 
 const suffixes = [
@@ -14,6 +15,8 @@ const suffixes = [
   'executive',
   'premier',
   'premium',
+  'rapide',
+  'superbe',
   'swift',
   'ultra'
 ];

@@ -8,6 +8,7 @@ function generateName() {
     _.shuffle(nouns)[0],
     _.shuffle(suffixes)[0]
   ])
+    .shuffle()
     .join(' ')
     .startCase()
     .value();
