@@ -127,7 +127,7 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nexports.__esModule = true;\nvar _ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\nvar words_1 = __webpack_require__(/*! ./words */ \"./src/words.ts\");\nfunction generateName() {\n    return _.chain([\n        _.shuffle(words_1.nouns)[0],\n        _.shuffle(words_1.suffixes)[0]\n    ])\n        .join(' ')\n        .startCase()\n        .value();\n}\nfunction init() {\n    document\n        .getElementById('generate-name')\n        .addEventListener('click', function () { return document\n        .getElementById('name')\n        .innerHTML = generateName(); });\n}\ninit();\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+eval("\nexports.__esModule = true;\nvar _ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\nvar words_1 = __webpack_require__(/*! ./words */ \"./src/words.ts\");\nfunction generateName() {\n    return _.chain([\n        _.shuffle(words_1.nouns)[0],\n        _.shuffle(words_1.suffixes)[0]\n    ])\n        .shuffle()\n        .join(' ')\n        .startCase()\n        .value();\n}\nfunction init() {\n    document\n        .getElementById('generate-name')\n        .addEventListener('click', function () { return document\n        .getElementById('name')\n        .innerHTML = generateName(); });\n}\ninit();\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ }),
 
@@ -139,7 +139,7 @@ eval("\nexports.__esModule = true;\nvar _ = __webpack_require__(/*! lodash */ \"
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nexports.__esModule = true;\nvar nouns = [\n    'pegasus',\n    'adventurer',\n    'journeyman'\n];\nexports.nouns = nouns;\nvar suffixes = [\n    '2000',\n    'agile',\n    'premier',\n    'swift',\n    'elite',\n    'deluxe'\n];\nexports.suffixes = suffixes;\n\n\n//# sourceURL=webpack:///./src/words.ts?");
+eval("\nexports.__esModule = true;\nvar nouns = [\n    'adventurer',\n    'explorer',\n    'journeyman',\n    'pegasus',\n    'quest',\n    'tourer'\n];\nexports.nouns = nouns;\nvar suffixes = [\n    '2000',\n    'agile',\n    'deluxe',\n    'elite',\n    'executive',\n    'premier',\n    'premium',\n    'rapide',\n    'superbe',\n    'swift',\n    'ultra'\n];\nexports.suffixes = suffixes;\n\n\n//# sourceURL=webpack:///./src/words.ts?");
 
 /***/ })
 
