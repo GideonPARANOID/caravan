@@ -1,6 +1,7 @@
 const path = require('path');
 
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 
 module.exports = {
@@ -22,12 +23,13 @@ module.exports = {
     path: path.resolve(__dirname, 'docs')
   },
   plugins: [
-    new CopyWebpackPlugin([
+    new CopyPlugin([
       {
         from: path.resolve(__dirname, 'src', '*.html'),
         to: path.resolve(__dirname, 'docs'),
         flatten: true
       }
-    ])
+    ]),
+    new LiveReloadPlugin()
   ]
 };

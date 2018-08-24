@@ -1,5 +1,6 @@
 const nouns = [
   'adventurer',
+  'crusader',
   'explorer',
   'journeyman',
   'pegasus',
@@ -13,6 +14,7 @@ const suffixes = [
   'deluxe',
   'elite',
   'executive',
+  'luxury',
   'premier',
   'premium',
   'rapide',
